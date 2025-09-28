@@ -1,10 +1,17 @@
-import React, {useEffect,useState} from "react";
+import React from 'react';
+import {Routes, Route} from "react-router-dom";
 
 
-function App(){
-  const [backendData,setBackendData] = useState(null);
-  
-  const testFirebase=async () =>{
+import Navbar from "./components/Navbar";
+import Home from "./components/Home"
+import Philosophy from "./components/Philosophy"
+import Art from "./components/Art"
+
+
+
+//testing database function by calling backend
+/*
+const testFirebase=async () =>{
   try{
   const response = await fetch('http://localhost:5000/test-firebase',{
     method:'POST'
@@ -17,14 +24,33 @@ function App(){
     console.error("Error",error)
   };
 }
+*/
 
-  return(
+function App(){
+
+   return(
     <div>
-      <h1>Firebase Test</h1>
-      <button onClick={testFirebase}>Test</button>
+    <Navbar/>
+    <Routes>
+      <Route path="/" element={<Home/>}></Route>
+      <Route path="/philosophy" element={<Philosophy/>}></Route>
+      <Route path="/art" element={<Art/>}></Route>
+      
+    </Routes>
+
+
+
     </div>
-  )
+
+)
+
+  
+  
 }
 
 export default App;
+
+
+
+
 

@@ -1,5 +1,8 @@
 import React, {useState} from 'react';
 
+
+
+
 function Philosophy(){
     const [quote, setQuote] = useState('');
     const [loading, setLoading] = useState(false);
@@ -35,7 +38,7 @@ function Philosophy(){
     };
 
     return (
-        <div style={{ padding: '20px', maxWidth: '600px', margin: '0 auto' }}>
+        <div style={{ padding: '20px', maxWidth: '800px', margin: '0 auto' }}>
             <h2>Daily Dose of Wisdom</h2>
             
             <button 
@@ -78,9 +81,29 @@ function Philosophy(){
                 }}>
                     <strong>Quote:</strong><br />
                     {quote}
+                    
+                    
+                    
+                <br/>
+                
+     
                 </div>
             )}
+            
+            
+            
+       <p>
+        
+        Around 13, I first stumbled into philosophy—really just restless thoughts about meaning, free will, and why we’re here. One day, while peppering my uncle with these “big questions,” he—perhaps tired of them—pointed me to Sam Harris’s podcast, then called Waking Up. The first episodes I heard were excerpts from his book, exploring spirituality and the nature of the self, and I was hooked.
+
+Soon after, I wandered into the philosophy section at Barnes & Noble, determined to ease myself in. I wasn’t ready for a War and Peace-sized tome, so I picked a slim volume with a cover I liked—coincidentally also by Harris: Free Will. That choice proved perfect.
+
+It kickstarted an intellectual journey I know I’ll be on for life. One of my goals is to write a book that lays out, from metaphysics to aesthetics, what I believe and why. At 23, I know there’s much more to learn before I can take that on, but I’m doing my best to absorb everything I can to eventually make it happen!</p>
+
+            
+
         </div>
+        
     );
 }
 

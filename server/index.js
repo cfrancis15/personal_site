@@ -6,10 +6,17 @@ const cors = require('cors')
 //add cors to allow cross origin requests
 
 app.use(cors())
+app.use(express.json())
 
 const admin = require('firebase-admin');
 require('dotenv').config();
 
+//linking our philosophy page
+const philosophyRouter = require('./philosophy');
+
+app.use('/api/philosophy', philosophyRouter);
+
+/*
 //initializing firebase admin
 const serviceAccount={
     project_id: process.env.FIREBASE_PROJECT_ID,
@@ -22,9 +29,12 @@ admin.initializeApp({
     databaseURL:`https://${process.env.FIREBASE_PROJECT_ID}-default-rtdb.firebaseio.com/`
 });
 
+
+
 const db = admin.firestore();
 
 //testing firebase connection
+
 app.post("/test-firebase",async(req,res)=>{
     try{
         const testData = {
@@ -48,7 +58,7 @@ app.post("/test-firebase",async(req,res)=>{
         })
     }
 })
-
+*/
 
 
 

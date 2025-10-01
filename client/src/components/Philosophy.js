@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-
+import BookCards from './BookCards';
 
 
 
@@ -38,8 +38,9 @@ function Philosophy(){
     };
 
     return (
+        <>
         <div style={{ padding: '20px', maxWidth: '800px', margin: '0 auto' }}>
-            <h2>Daily Dose of Wisdom</h2>
+            <h2 style={{textAlign:"center"}}>Daily Dose of Wisdom</h2>
             
             <button 
                 onClick={fetchPhilosophyQuote}
@@ -51,7 +52,7 @@ function Philosophy(){
                     color: 'white',
                     border: 'none',
                     borderRadius: '5px',
-                    cursor: loading ? 'not-allowed' : 'pointer'
+                    cursor: loading ? 'not-allowed' : 'pointer',
                 }}
             >
                 {loading ? 'Loading...' : 'Get Philosophy Quote'}
@@ -86,11 +87,11 @@ function Philosophy(){
                     
                 <br/>
                 
-     
                 </div>
+            
             )}
             
-            
+          
             
        <p>
         
@@ -102,9 +103,18 @@ It kickstarted an intellectual journey I know I’ll be on for life. One of my g
 
             
 
+
+
         </div>
-        
+        <BookCards/>
+        </>
     );
 }
+
+
+
+
+
+
 
 export default Philosophy;

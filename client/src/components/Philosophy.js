@@ -53,6 +53,7 @@ function Philosophy(){
                     border: 'none',
                     borderRadius: '5px',
                     cursor: loading ? 'not-allowed' : 'pointer',
+                    
                 }}
             >
                 {loading ? 'Loading...' : 'Get Philosophy Quote'}

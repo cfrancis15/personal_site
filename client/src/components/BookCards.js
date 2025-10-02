@@ -33,17 +33,17 @@ const Books = {
 {
     name:"simulation.jpg",
     title:"Simulacra & Simulation",
-    description:"asdf"
+    description:"Simulacra and Simulation, which famously inspired The Matrix (one of my favorite films), isn’t about computer simulation in the pop-culture sense but about how signs and representations can become more real to us than reality itself. Jean Baudrillard argues that in modern life we often simulate things we no longer directly experience—like going to the gym as a stand-in for ancestral labor, or taking vitamin D supplements as a substitute for sunlight. Disneyland is his quintessential example: it doesn’t reflect a “real” America, but a mythic version that never existed, a copy without an original. For me, this book reframed how I see modern life: we live surrounded by layers of simulation, and half the time we prefer them to the real thing."
 },
 {
     name:"waking up.jpg",
     title:"Waking Up",
-    description:"asdf"
+    description:"Waking Up by Sam Harris is a secular guide to meditation and spirituality, aimed at stripping contemplative practices from their traditional religious frameworks. I had been curious about meditation and Zen since my teens, but it never fully clicked until I read this book. Harris’s clear explanations of mindfulness, along with practical techniques, broke through the mystique and made the practice accessible. Since then, I’ve meditated regularly, and the benefits have been profound—from greater emotional regulation to a more consistent baseline of happiness."
 },
 {
     name:"singularity.jpg",
     title:"The Singularity is Near",
-    description:"asdf"
+    description:"The Singularity Is Near is one of the original landmark books on AI and technology. Ray Kurzweil argues that humans naturally think in straight lines, but this mindset fails us when it comes to technology, which advances exponentially—each breakthrough stacking on top of the last, especially in computer science. He even predicted AI’s arrival around 2020, which was remarkably accurate, and suggested it would soon pass the Turing Test. Ironically, the Turing Test has lost much of its relevance; today, it’s almost inverted—you can identify an AI because it’s too sharp, too consistent, and too good at recall or written expression. Kurzweil ultimately envisions humans merging with machines to form a new species, a vision that feels less like science fiction and more like a live question about the trajectory of our future."
 }]}
 
 
@@ -53,9 +53,9 @@ function BookCards(){
      <div>   
     
     
-    <h1 style={{textAlign: "center"}}>
+    <h2 style={{textAlign: "center"}}>
         Books that have made me think:
-    </h1>
+    </h2>
     
     <div style={{display:'flex', margin:'0 auto',padding:"20px", justifyContent:"space-evenly", flexWrap:"wrap"}}>
     

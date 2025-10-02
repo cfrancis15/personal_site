@@ -8,13 +8,22 @@ const cors = require('cors')
 app.use(cors())
 app.use(express.json())
 
-const admin = require('firebase-admin');
+
 require('dotenv').config();
 
 //linking our philosophy page
 const philosophyRouter = require('./philosophy');
-
 app.use('/api/philosophy', philosophyRouter);
+
+
+
+//linking and using our stripe page
+const stripeRouter = require('./checkout');
+app.use('./api/checkout',stripeRouter);
+
+
+
+//const admin = require('firebase-admin');
 
 /*
 //initializing firebase admin
@@ -59,11 +68,6 @@ app.post("/test-firebase",async(req,res)=>{
     }
 })
 */
-
-
-
-
-
 
 
 app.listen(5000,()=>{console.log("Server is running on port 5000")})

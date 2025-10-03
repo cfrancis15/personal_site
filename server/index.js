@@ -18,8 +18,8 @@ app.use('/api/philosophy', philosophyRouter);
 
 
 //linking and using our stripe page
-//const stripeRouter = require('./checkout');
-//app.use('./api/checkout',stripeRouter);
+const stripeRouter = require('./stripe');
+app.use('/api',stripeRouter);
 
 
 

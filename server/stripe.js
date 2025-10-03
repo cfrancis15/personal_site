@@ -1,14 +1,21 @@
 const express = require('express');
 const router = express.Router();
+
+
 require('dotenv').config();
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+
+
+const COFFEE_PRICE_ID = 'price_1SEB0eCmKSIfaHO7B4PQcOiI'
+const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 
 router.post('/checkout', async (req, res) => {
     try {
       const session = await stripe.checkout.sessions.create({
-        mode: 'payment',
+        mode:"payment",
+      
+      
         line_items: [
           {
             price: COFFEE_PRICE_ID,  // Pre-created Price ID

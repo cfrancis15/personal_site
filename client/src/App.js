@@ -33,7 +33,7 @@ function App(){
     <Navbar/>
     <Routes>
       <Route path="/" element={<Home/>}></Route>
-      <Route path="/philosophy" element={<Philosophy/>}></Route>
+      <Route path="/reading-room" element={<Philosophy/>}></Route>
       <Route path="/art" element={<Art/>}></Route>
       
     </Routes>

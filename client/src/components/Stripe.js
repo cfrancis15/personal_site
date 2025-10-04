@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 
 
 
@@ -25,10 +25,7 @@ function Stripe(){
     return (
       <section>
         <div className="product">
-          <img
-            src="https://i.imgur.com/EHyR2nP.png"
-            alt="Buy me a coffee"
-          />
+
           <div className="description">
             <h3>Buy me a coffee</h3>
             <h5>$5.00</h5>

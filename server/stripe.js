@@ -6,25 +6,33 @@ require('dotenv').config();
 
 
 
-const COFFEE_PRICE_ID = 'price_1SEB0eCmKSIfaHO7B4PQcOiI'
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+
+
 
 
 router.post('/checkout', async (req, res) => {
     try {
+
+
+
       const session = await stripe.checkout.sessions.create({
         mode:"payment",
       
       
         line_items: [
           {
-            price: COFFEE_PRICE_ID,  // Pre-created Price ID
+            price_data: {
+              currency: 'usd',
+              product_data: { name: 'Coffee' },
+              unit_amount: 500, // 500 pennies!
+            },
             quantity: 1,
           },
         ],
         allow_promotion_codes: false,
-        success_url: `${process.env.PUBLIC_BASE_URL}/thanks?session_id={CHECKOUT_SESSION_ID}`,
-        cancel_url: `${process.env.PUBLIC_BASE_URL}/cancelled`,
+        success_url: `${process.env.PUBLIC_BASE_URL}/`,
+        cancel_url: `${process.env.PUBLIC_BASE_URL}/`,
       });
   
       res.json({ url: session.url });

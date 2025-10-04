@@ -21,9 +21,39 @@ function Home() {
   return (
     <Box sx={{ flexGrow: 1 }}>
 
-      <Grid container spacing={2} padding={4}>
+      <Grid container spacing={2} padding={2}>
         <Grid size={8}>
-          <Item>This other shit i need to add</Item>
+          <Item>
+
+          
+            <h1>Connor John Francis</h1>
+            <br/>
+        
+        <Grid size = {8}>
+       
+            <img src="/Connor Francis Headshot.png" alt="Professional headshot of super handsome Connor" 
+            style={{
+                borderRadius:'50%', 
+                height:"400px",
+                marginLeft:"-300px"
+                }}></img>
+                
+            
+</Grid>  
+
+<Grid>
+    <p>I'm a Financial Analyst at Marcus & Millichap with a strong foundation in finance, real estate, and applied technology. My background includes experience across private equity, wealth management, startups, and real estate brokerage, giving me a well-rounded view of capital markets, strategy, and asset-level analysis.
+
+Beyond my core work, I have a strong interest in leveraging technology to solve complex business problems. I build software in my free time using React, Next.js, TypeScript, Python, Flask, and other technologies — skills I’ve used to streamline analysis workflows, prototype internal tools, and better understand the intersection of data and decision-making.
+
+I graduated from the University of Colorado Boulder with a degree in Finance and studied abroad in both Copenhagen and Aix-en-Provence. Through my academic and professional experience, I’ve developed a structured, analytical approach to problem solving and a practical understanding of how to drive results in fast-paced environments.
+
+I'm especially interested in problem spaces where finance, real estate, and technology meet — and where I can apply both strategic thinking and technical skills to deliver impact.</p>
+</Grid>
+
+
+
+          </Item>
         </Grid>
 
 
@@ -33,6 +63,13 @@ function Home() {
                 <Stripe/>
 
           </Item>
+        
+          <Item>
+            <img src="/forest.jpeg" alt="WA state forest, I'd love to have that coffee you got me in a place like this!" style={{borderRadius:"25px"}}></img>
+
+          </Item>
+
+
         </Grid>
 
         </Grid>

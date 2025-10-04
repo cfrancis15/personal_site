@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-
+import Button from '@mui/material/Button';
 
 
 function Stripe(){
@@ -24,16 +24,16 @@ function Stripe(){
   
     return (
       <section>
-        <div className="product">
+        <div>
 
-          <div className="description">
-            <h3>Buy me a coffee</h3>
-            <h5>$5.00</h5>
+          <div>
+            <h3>Help me lock in!</h3>
           </div>
         </div>
-        <button type="button" onClick={handleCheckout} disabled={loading}>
-          {loading ? "Redirecting…" : "Checkout"}
-        </button>
+        <Button variant="contained" onClick={handleCheckout} disabled={loading}>
+          {loading ? "Redirecting…" : "Gift a coffee"}
+        </Button>
+        
       </section>
     );
   };

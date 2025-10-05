@@ -1,0 +1,12 @@
+{
+    "AWSEBDockerrunVersion": "1",
+    "Image": {
+      "Name": "cofr15/personal_site:latest",
+      "Update": "true"
+    },
+    "Ports": [
+      {
+        "ContainerPort": "5000"
+      }
+    ]
+  }

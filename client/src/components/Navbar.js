@@ -11,7 +11,7 @@ import { useNavigate } from 'react-router-dom';
 const pages = [
   {name:'Home', path:"/"},
   {name:"Reading Room", path:"/reading-room"},
-  {name:"Art", path:"/art"},
+  {name:"Adventures", path:"/adventures"},
 ];
 
 
@@ -50,3 +50,4 @@ const navigate=useNavigate();
 }
 
 export default Navbar;
+

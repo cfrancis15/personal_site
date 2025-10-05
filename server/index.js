@@ -4,7 +4,7 @@ require('dotenv').config();
 const express = require("express")
 const app = express()
 const cors = require('cors')
-
+const path = require('path')
 
 //add cors to allow cross origin requests
 
@@ -12,6 +12,7 @@ app.use(cors())
 app.use(express.json())
 
 
+app.use(express.static(path.join(__dirname, 'public')))
 
 
 //linking our philosophy page
@@ -71,6 +72,10 @@ app.post("/test-firebase",async(req,res)=>{
     }
 })
 */
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'))
+  })
 
 
 app.listen(5000,()=>{console.log("Server is running on port 5000")})

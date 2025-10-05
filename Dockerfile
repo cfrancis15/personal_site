@@ -1,30 +1,30 @@
-# Use Node.js 18 (more recent than your current Node 12)
+# Use Node.js 18
 FROM node:18-alpine
 
 # Set working directory
-WORKDIR /app
+WORKDIR /usr/src/app
 
-# Copy package files for both client and server
+# Copy package files
+COPY package*.json ./
 COPY client/package*.json ./client/
 COPY server/package*.json ./server/
 
-# Install dependencies for both client and server
-WORKDIR /app/client
-RUN npm install --legacy-peer-deps
-
-WORKDIR /app/server
-RUN npm install
+# Install dependencies
+RUN cd client && npm install --legacy-peer-deps
+RUN cd server && npm install
 
 # Build the React frontend
-WORKDIR /app/client
-COPY client/ .
-RUN npm run build
+RUN cd client && npm run build
 
-# Copy server files and move built frontend to server's public directory
-WORKDIR /app/server
-COPY server/ .
-RUN mkdir -p public
-RUN cp -r ../client/build/* ./public/
+# Copy server files
+COPY server/ ./server/
+
+# Move built frontend to server's public directory
+RUN mkdir -p server/public
+RUN cp -r client/build/* server/public/
+
+# Set working directory to server
+WORKDIR /usr/src/app/server
 
 # Set environment variables
 ENV PORT=5000

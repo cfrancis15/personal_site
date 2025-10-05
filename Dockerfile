@@ -10,7 +10,7 @@ COPY server/package*.json ./server/
 
 # Install dependencies for both client and server
 WORKDIR /app/client
-RUN npm install
+RUN npm install --legacy-peer-deps
 
 WORKDIR /app/server
 RUN npm install
@@ -23,8 +23,6 @@ RUN npm run build
 # Copy server files and move built frontend to server's public directory
 WORKDIR /app/server
 COPY server/ .
-
-# Create public directory and move built React app there
 RUN mkdir -p public
 RUN cp -r ../client/build/* ./public/
 

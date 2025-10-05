@@ -1,10 +1,10 @@
 import React from 'react';
-//import USAMap from "react-usa-map";
+import USAMap from "react-usa-map";
 import Box from "@mui/material/Box"
 
 
 function Adventures(){
- {/*   
+
     const statesFilling = () => {
         return {
             "WA": {
@@ -120,11 +120,11 @@ function Adventures(){
         
         
         };};
-*/} 
+
     return (
         <div>
 
- {/* 
+
 <Box 
                 sx={{ 
                     display: 'flex', 
@@ -140,7 +140,7 @@ function Adventures(){
             <br/>
     </Box>
 
-   */}
+
     <Box 
                 sx={{ 
                     display: 'flex', 

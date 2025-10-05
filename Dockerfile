@@ -1,7 +1,5 @@
-# Use Node.js 18
 FROM node:18-alpine
 
-# Set working directory
 WORKDIR /usr/src/app
 
 # Copy package files
@@ -12,6 +10,9 @@ COPY server/package*.json ./server/
 # Install dependencies
 RUN cd client && npm install --legacy-peer-deps
 RUN cd server && npm install
+
+# Copy client source code (including public folder)
+COPY client/ ./client/
 
 # Build the React frontend
 RUN cd client && npm run build

@@ -31,8 +31,8 @@ router.post('/checkout', async (req, res) => {
           },
         ],
         allow_promotion_codes: false,
-        success_url: `${process.env.PUBLIC_BASE_URL}/`,
-        cancel_url: `${process.env.PUBLIC_BASE_URL}/`,
+        success_url: `${process.env.PUBLIC_BASE_URL}`,
+        cancel_url: `${process.env.PUBLIC_BASE_URL}`,
       });
   
       res.json({ url: session.url });

@@ -8,113 +8,113 @@ function Adventures(){
     const statesFilling = () => {
         return {
             "WA": {
-                fill: "navy",
+                fill: "#517F93",
             },
             "OR": {
-                fill: "#CC0000"
+                fill: "#A6B7A1"
             },
             "CA": {
-                fill: "#CC0000"
+                fill: "#A6B7A1"
             },
             "WY": {
-                fill: "#CC0000"
+                fill: "#A6B7A1"
             },
             "ID": {
-                fill: "#CC0000"
+                fill: "#A6B7A1"
             },
             "UT": {
-                fill: "#CC0000"
+                fill: "#A6B7A1"
             },
             "MT": {
-                fill: "#CC0000"
+                fill: "#A6B7A1"
                 ,
             },
                 "NV": {
-                    fill: "#CC0000"    
+                    fill: "#A6B7A1"    
             },
             "AZ": {
-                fill: "#CC0000"
+                fill: "#A6B7A1"
             },
             "CO": {
-                fill: "navy"
+                fill: "#517F93"
             },
             "NM": {
-                fill: "#CC0000"
+                fill: "#A6B7A1"
             },
             "TX": {
-                fill: "#CC0000"
+                fill: "#A6B7A1"
             },
             "OK": {
-                fill: "#CC0000"
+                fill: "#A6B7A1"
             },
             "NE": {
-                fill: "#CC0000"
+                fill: "#A6B7A1"
             },
             "KS": {
-                fill: "#CC0000"
+                fill: "#A6B7A1"
             },
             "MN": {
-                fill: "#CC0000"
+                fill: "#A6B7A1"
             },
             "IA": {
-                fill: "#CC0000"
+                fill: "#A6B7A1"
             },
             "MO": {
-                fill: "#CC0000"
+                fill: "#A6B7A1"
             },
             "AR": {
-                fill: "#CC0000"
+                fill: "#A6B7A1"
             },
             "LA": {
-                fill: "#CC0000"
+                fill: "#A6B7A1"
             },
             "MS": {
-                fill: "#CC0000"
+                fill: "#A6B7A1"
             },
             "AL": {
-                fill: "#CC0000"
+                fill: "#A6B7A1"
             },
             "TN": {
-                fill: "#CC0000"        
+                fill: "#A6B7A1"        
             },
             "GA": {
-                fill: "#CC0000"      
+                fill: "#A6B7A1"      
             },
             "FL": {
-                fill: "#CC0000"      
+                fill: "#A6B7A1"      
             },
             "MD": {
-                fill: "#CC0000"      
+                fill: "#A6B7A1"      
             },
             "VA": {
-                fill: "#CC0000"      
+                fill: "#A6B7A1"      
             },
             "NC": {
-                fill: "#CC0000"      
+                fill: "#A6B7A1"      
             },
             "NY": {
-                fill: "#CC0000"      
+                fill: "#A6B7A1"      
             },
             "CT": {
-                fill: "#CC0000"      
+                fill: "#A6B7A1"      
             },
             "MA": {
-                fill: "navy"      
+                fill: "#517F93"      
             },
             "NH": {
-                fill: "#CC0000"      
+                fill: "#A6B7A1"      
             },
             "VT": {
-                fill: "#CC0000"      
+                fill: "#A6B7A1"      
             },
             "MI": {
-                fill: "#CC0000"      
+                fill: "#A6B7A1"      
             },
             "HI": {
-                fill: "#CC0000"      
+                fill: "#A6B7A1"      
             },
             "DC": {
-                fill: "#CC0000"      
+                fill: "#A6B7A1"      
             }
         
         
@@ -135,7 +135,7 @@ function Adventures(){
                 }}
             >
             <h1>States I've Been To</h1>
-            <p>Blue = lived there | Red = traveled there</p>
+            <p>Blue = lived there | Green = traveled there</p>
             <USAMap customize={statesFilling()} />
             <br/>
     </Box>
@@ -180,8 +180,8 @@ function Adventures(){
                     style={{borderRadius:"25px", height:"500px", width: "400px", objectFit: "cover"}}
                 />
                 <img 
-                    src="/conway.png" 
-                    alt="Conway" 
+                    src="/verona.jpg" 
+                    alt="Verona" 
                     style={{borderRadius:"25px", height:"500px", width: "400px", objectFit: "cover"}}
                 />
             </Box>

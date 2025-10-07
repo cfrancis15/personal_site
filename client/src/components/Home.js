@@ -28,7 +28,7 @@ function Home() {
           
             <h1>Connor John Francis</h1>
             
-            <h4>"The secret of getting ahead is getting started. -Mark Twain</h4>
+            <h4>"The secret of getting ahead is getting started." -Mark Twain</h4>
             
             
             

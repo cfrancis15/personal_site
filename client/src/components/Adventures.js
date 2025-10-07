@@ -8,113 +8,112 @@ function Adventures(){
     const statesFilling = () => {
         return {
             "WA": {
-                fill: "#517F93",
+                fill: "#3366ff",
             },
             "OR": {
-                fill: "#A6B7A1"
+                fill: "#66cc66"
             },
             "CA": {
-                fill: "#A6B7A1"
+                fill: "#66cc66"
             },
             "WY": {
-                fill: "#A6B7A1"
+                fill: "#66cc66"
             },
             "ID": {
-                fill: "#A6B7A1"
+                fill: "#66cc66"
             },
             "UT": {
-                fill: "#A6B7A1"
+                fill: "#66cc66"
             },
             "MT": {
-                fill: "#A6B7A1"
-                ,
+                fill: "#66cc66"
             },
-                "NV": {
-                    fill: "#A6B7A1"    
+            "NV": {
+                fill: "#66cc66"    
             },
             "AZ": {
-                fill: "#A6B7A1"
+                fill: "#66cc66"
             },
             "CO": {
-                fill: "#517F93"
+                fill: "#3366ff"
             },
             "NM": {
-                fill: "#A6B7A1"
+                fill: "#66cc66"
             },
             "TX": {
-                fill: "#A6B7A1"
+                fill: "#66cc66"
             },
             "OK": {
-                fill: "#A6B7A1"
+                fill: "#66cc66"
             },
             "NE": {
-                fill: "#A6B7A1"
+                fill: "#66cc66"
             },
             "KS": {
-                fill: "#A6B7A1"
+                fill: "#66cc66"
             },
             "MN": {
-                fill: "#A6B7A1"
+                fill: "#66cc66"
             },
             "IA": {
-                fill: "#A6B7A1"
+                fill: "#66cc66"
             },
             "MO": {
-                fill: "#A6B7A1"
+                fill: "#66cc66"
             },
             "AR": {
-                fill: "#A6B7A1"
+                fill: "#66cc66"
             },
             "LA": {
-                fill: "#A6B7A1"
+                fill: "#66cc66"
             },
             "MS": {
-                fill: "#A6B7A1"
+                fill: "#66cc66"
             },
             "AL": {
-                fill: "#A6B7A1"
+                fill: "#66cc66"
             },
             "TN": {
-                fill: "#A6B7A1"        
+                fill: "#66cc66"        
             },
             "GA": {
-                fill: "#A6B7A1"      
+                fill: "#66cc66"      
             },
             "FL": {
-                fill: "#A6B7A1"      
+                fill: "#66cc66"      
             },
             "MD": {
-                fill: "#A6B7A1"      
+                fill: "#66cc66"      
             },
             "VA": {
-                fill: "#A6B7A1"      
+                fill: "#66cc66"      
             },
             "NC": {
-                fill: "#A6B7A1"      
+                fill: "#66cc66"      
             },
             "NY": {
-                fill: "#A6B7A1"      
+                fill: "#66cc66"      
             },
             "CT": {
-                fill: "#A6B7A1"      
+                fill: "#66cc66"      
             },
             "MA": {
-                fill: "#517F93"      
+                fill: "#3366ff"      
             },
             "NH": {
-                fill: "#A6B7A1"      
+                fill: "#66cc66"      
             },
             "VT": {
-                fill: "#A6B7A1"      
+                fill: "#66cc66"      
             },
             "MI": {
-                fill: "#A6B7A1"      
+                fill: "#66cc66"      
             },
             "HI": {
-                fill: "#A6B7A1"      
+                fill: "#66cc66"      
             },
             "DC": {
-                fill: "#A6B7A1"      
+                fill: "#66cc66"      
             }
         
         
